@@ -90,6 +90,19 @@
 
 #pragma mark - UIAdaptivePresentationControllerDelegate
 
+- (BOOL)presentationControllerShouldDismiss:(UIPresentationController *)presentationController
+{
+  if (self.preventNativeDismiss) {
+    return NO;
+  }
+  return YES;
+}
+
+- (void)presentationControllerDidAttemptToDismiss:(UIPresentationController *)presentationController
+{
+  [self.delegate sheetControllerDidPreventNativeDismiss:self];
+}
+
 - (void)presentationControllerDidDismiss:(UIPresentationController *)presentationController
 {
   [self.delegate sheetControllerDidNativeDismiss:self];

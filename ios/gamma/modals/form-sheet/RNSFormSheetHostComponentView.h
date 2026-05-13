@@ -25,6 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) NSInteger largestUndimmedDetentIndex;
 @property (nonatomic, readonly) NSInteger initialDetentIndex;
 @property (nonatomic, readonly) BOOL prefersScrollingExpandsWhenScrolledToEdge;
+@property (nonatomic, readonly) BOOL preventNativeDismiss;
 
 @end
 
