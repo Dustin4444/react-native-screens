@@ -53,6 +53,12 @@
   [self attachBackdropTapGestureRecognizer];
 }
 
+- (void)viewDidDisappear:(BOOL)animated
+{
+  [super viewDidDisappear:animated];
+  [self detachBackdropTapGestureRecognizer];
+}
+
 #pragma mark - Presentation Setup
 
 - (void)prepareForPresentation

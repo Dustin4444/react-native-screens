@@ -78,7 +78,6 @@
     sheet.prefersScrollingExpandsWhenScrolledToEdge = prefersScrollingExpandsWhenScrolledToEdge;
   }];
 
-  // TODO: @t0maboro - temporary placed here
   controller.preventNativeDismiss = host.preventNativeDismiss;
 #endif // !TARGET_OS_TV
 }
