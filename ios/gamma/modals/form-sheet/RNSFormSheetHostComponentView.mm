@@ -30,7 +30,6 @@ namespace react = facebook::react;
   // Props
   BOOL _isOpen;
   std::vector<double> _detents;
-  BOOL _preventNativeDismiss;
 }
 
 - (instancetype)initWithFrame:(CGRect)frame
